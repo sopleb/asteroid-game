@@ -76,7 +76,7 @@ class App:
 
     def _start_music(self):
         track = self.settings["bg_track"]
-        path = f"sounds/{track}.wav"
+        path = f"sounds/{track}.mp3"
         try:
             pygame.mixer.music.load(path)
             pygame.mixer.music.set_volume(self.settings["music_volume"])

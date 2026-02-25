@@ -46,8 +46,8 @@ class GameScreen:
 
     def _load_sounds(self):
         sfx_vol = self.app.settings["sfx_volume"]
-        self.bang_sound = self._load_sound("sounds/bangSmall.wav", sfx_vol)
-        self.shoot_sound = self._load_sound("sounds/fire.wav", sfx_vol * 0.67)
+        self.bang_sound = self._load_sound("sounds/bangSmall.mp3", sfx_vol)
+        self.shoot_sound = self._load_sound("sounds/fire.mp3", sfx_vol * 0.67)
 
     def _load_sound(self, path, volume):
         try:
