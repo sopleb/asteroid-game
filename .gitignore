@@ -8,5 +8,13 @@ wheels/
 
 # Virtual environments
 .venv
+
+# IDE
+.idea/
+
+# Game logs
 game_state.jsonl
 game_events.jsonl
+
+# Settings
+settings.json

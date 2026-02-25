@@ -1,11 +1,37 @@
+# screen
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
+
+# player
 PLAYER_RADIUS = 20
 LINE_WIDTH = 2
 PLAYER_TURN_SPEED = 300
 PLAYER_MOVE_SPEED = 200
+PLAYER_SHOOT_SPEED = 500
+PLAYER_SHOOT_COOLDOWN_SECONDS = 0.3
+PLAYER_LIVES = 3
 
+# shots
+SHOT_RADIUS = 5
+
+# asteroids
 ASTEROID_MIN_RADIUS = 20
 ASTEROID_KINDS = 3
 ASTEROID_SPAWN_RATE_SECONDS = 0.8
 ASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS
+
+# scoring -- smaller rocks are harder to hit so they're worth more
+SCORE_SMALL_ASTEROID = 100
+SCORE_MEDIUM_ASTEROID = 50
+SCORE_LARGE_ASTEROID = 20
+
+# powerups
+POWERUP_RADIUS = 12
+POWERUP_LIFETIME = 8.0       # seconds before uncollected powerup despawns
+POWERUP_BLINK_TIME = 2.0     # start blinking this many seconds before despawn
+POWERUP_SPAWN_CHANCE = 0.25  # probability of drop on asteroid kill
+SHIELD_DURATION = 5.0
+SPEED_BOOST_DURATION = 5.0
+SPEED_BOOST_MULTIPLIER = 1.75
+RAPID_FIRE_DURATION = 5.0
+RAPID_FIRE_MULTIPLIER = 0.35  # multiplied against cooldown, so lower = faster
